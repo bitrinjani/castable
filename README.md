@@ -36,7 +36,12 @@ const sum = product.price + product.tax;
 console.log(`sum: ${sum}`); // 200 + 10 = 210👍
 ```
 
-This library also can convert:
+Castable internally applies Number("200") for price field and Number("10") for tax field in order to cast them to the correct type, recognizing those are actually `number` type, not `string`.
+
+Supported types:
+- number: "100" will be converted to real number `100`.
+- boolean: string "true", "false" in JSON will be real boolean `true`, `false`.
+- Date: any string representaion supported by Date constructor, like "Thu Dec 21 2017 18:38:58 GMT+0900 (Tokyo Standard Time)"
 - Nested type
 - Array<T>
 - Multi-dementional Array<T> 
