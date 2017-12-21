@@ -1,0 +1,38 @@
+{
+  "name": "castable",
+  "version": "1.0.1",
+  "description": "Convert the types of the object properties at run time based on compile-time types.",
+  "main": "dist/castable.js",
+  "types" : "dist/castable.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest "
+  },
+  "keywords": ["cast", "castable", "typescript", "decorator"],
+  "repository": "https://github.com/bitrinjani/castable",
+  "author": "bitrinjani <bitrinjani@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.1.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.4",
+    "@types/node": "^8.0.46",
+    "jest": "^22.0.3",
+    "ts-jest": "^22.0.0",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}
