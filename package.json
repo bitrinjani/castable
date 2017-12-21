@@ -6,7 +6,7 @@
   "types" : "dist/castable.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest "
+    "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": ["cast", "castable", "typescript", "decorator"],
   "repository": "https://github.com/bitrinjani/castable",
@@ -20,7 +20,8 @@
     "@types/node": "^8.0.46",
     "jest": "^22.0.3",
     "ts-jest": "^22.0.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.3",
+    "coveralls": "^3.0.0"
   },
   "jest": {
     "transform": {
@@ -33,6 +34,13 @@
       "js",
       "jsx",
       "json"
+    ],
+    "mapCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/__tests__/**",
+      "!**/node_modules/**",
+      "!**/*.d.ts"
     ]
   }
 }
