@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/bitrinjani/castable.svg?branch=master?i=2)](https://travis-ci.org/bitrinjani/castable) [![Coverage Status](https://coveralls.io/repos/github/bitrinjani/castable/badge.svg?branch=master&i=2)](https://coveralls.io/github/bitrinjani/castable?branch=master) [![npm version](https://badge.fury.io/js/%40bitr%2Fcastable.svg)](https://badge.fury.io/js/%40bitr%2Fcastable)
+[![Build Status](https://travis-ci.org/bitrinjani/castable.svg?branch=master)](https://travis-ci.org/bitrinjani/castable) [![Coverage Status](https://coveralls.io/repos/github/bitrinjani/castable/badge.svg?branch=master&i=2)](https://coveralls.io/github/bitrinjani/castable?branch=master) [![npm version](https://badge.fury.io/js/%40bitr%2Fcastable.svg)](https://badge.fury.io/js/%40bitr%2Fcastable)
 
 # Castable TypeScript Library
 Castable sanitizes dirty external data by casting all properties at run time to the types specified at compile time.
