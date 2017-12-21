@@ -60,4 +60,5 @@ npm install @bitr/castable
 4. Add `@cast` decorator to nested type
 5. Do same to all nested types
 
-
+# Example
+This library is extensively used in [R2](https://github.com/bitrinjani/r2), e.g. [type.ts](https://github.com/bitrinjani/r2/blob/master/src/Quoine/types.ts).
