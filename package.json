@@ -1,5 +1,5 @@
 {
-  "name": "castable",
+  "name": "@bitr/castable",
   "version": "1.0.1",
   "description": "Convert the types of the object properties at run time based on compile-time types.",
   "main": "dist/castable.js",
