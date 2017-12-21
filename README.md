@@ -4,7 +4,7 @@
 Castable sanitizes dirty external data by casting all properties at run time to the types specified at compile time.
 
 # Why do you need this library?
-A lot of web services return `Number` type fields **with double-quotes** in JSON format. If you convert them by JSON.stringify, the double-quoted numbers will be string type!!
+A lot of web services return `number` type fields **with double-quotes** in JSON format. If you convert them by JSON.stringify, the double-quoted numbers will become `string` type!!
 
 ```JavaScript
 const serverResponse = `{
