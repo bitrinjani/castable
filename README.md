@@ -52,6 +52,16 @@ Supported types:
 npm install @bitr/castable
 ```
 
+and set tsconfig ``emitDecoratorMetadata``.
+```json
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true
+    }
+}
+```
+
 # Usage
 1. Extend Castable
 2. Add `@cast` decorator to primitive type field (string, number, boolean)
