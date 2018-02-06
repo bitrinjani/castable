@@ -1,12 +1,16 @@
 {
   "name": "@bitr/castable",
-  "version": "1.0.1",
-  "description": "Convert the types of the object properties at run time based on compile-time types.",
+  "version": "1.0.3",
+  "description": "Castable library sanitizes dirty external data by casting all properties at run-time to the types specified at compile time.",
   "main": "dist/castable.js",
   "types" : "dist/castable.d.ts",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc",
-    "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "prepublishOnly": "npm run build",
+    "test": "jest --coverage --runInBand && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --runInBand",
+    "cov": "jest --coverage --runInBand"
   },
   "keywords": ["cast", "castable", "typescript", "decorator"],
   "repository": "https://github.com/bitrinjani/castable",

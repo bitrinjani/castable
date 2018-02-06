@@ -14,7 +14,8 @@
     "noUnusedLocals": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "pretty": true
   },
   "include": [
     "./**/*.ts"

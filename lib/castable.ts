@@ -28,7 +28,7 @@ export class Castable {
     });
   }
 
-  convert(source: any, propertyKey: string, type: any, depth: number) {
+  private convert(source: any, propertyKey: string, type: any, depth: number) {
     if (type === undefined) {
       return source;
     }
